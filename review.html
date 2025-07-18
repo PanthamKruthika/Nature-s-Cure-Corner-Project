@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nature's Cure Corner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+  *{
+  		margin:0px;
+  		padding:0px;
+  	}
+    body {
+      font-family: Arial;
+    }
+    .form-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(12, 56, 12);
+            color: white;
+            height: 70px;
+        }
+        header .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            width: 800px;
+            justify-content: end;
+        }
+        header nav ul li{
+            font-size: 1.5rem;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main{
+            background-color:rgb(120, 150, 66);
+            min-height:480px;
+            padding-top: 50px;
+            padding-bottom:10px;
+        }
+        footer {
+            background-color: rgb(12, 56, 12);
+            color: white;
+            text-align: center;
+            font-size: 1.3rem;
+            height:50px;
+    	}
+    	.button-1{
+    		background-color: #4CAF50;
+      		color: white;
+      		border: none;
+      		cursor: pointer;
+      		width:460px;
+    	}
+  </style>
+</head>
+<body>
+<header>
+        <div class="logo">NATURE'S CURE CORNER</div>
+        <nav>
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="review.html">User Review</a></li>
+          </ul>
+        </nav>
+</header>
+<main>
+  <div class="form-container">
+    <h2>Leave a Review</h2>
+    <form action="review.jsp" method="post">
+      <label>Username:</label>
+      <input type="text" name="username" required>
+
+      <label>Your Review:</label>
+      <textarea name="review" rows="5" required></textarea>
+
+      <input type="submit" value="Submit Review">
+    </form>
+    <form action="review.jsp">
+      <button type="submit" class="btn btn-success button-1">View Reviews</button>
+    </form>
+  </div>
+ </main>
+ <footer>
+    <div class="footerbottom">
+     <p>copyright &copy;2025;</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nature's Cure Corner</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+ <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(12, 56, 12);
+            color: white;
+            height: 70px;
+        }
+        header .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            width: 800px;
+            justify-content: end;
+        }
+        header nav ul li{
+            font-size: 1.5rem;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main{
+            background-color:rgb(120, 150, 66);
+        }
+        .card-width{
+            box-shadow: 3px 3px 10px black;
+            max-width: 300px;
+            text-align: center;
+        }
+        .card img{
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        img{
+            width:300px;
+            height: 200px;
+        }
+        .catalogcard{
+            padding: 50px 150px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap ;
+            justify-content: space-evenly;
+            gap: 40px;
+        }   
+        button{
+        	margin-top:10px;
+        }
+        .catalogcard .card-width button{
+            background-color: rgb(12, 56, 12) ;
+            color: white;
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: rgb(12, 56, 12);
+            color: white;
+            text-align: center;
+            font-size: 1.3rem;
+            height:50px;
+    	}
+    </style>
+</head>
+<body>
+<header>
+        <div class="logo">NATURE'S CURE CORNER</div>
+        <nav>
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="review.html">User Review</a></li>
+          </ul>
+        </nav>
+</header>
+<main>
+    <!-- Catalog -->
+     <div class="catalogcard ">
+        <!-- card-1 -->
+         <div class="card card-body card-width  ">
+                <h2>Common Diseases</h2>
+                <img class="w-100 "src="pictures/6.webp" alt="">
+                <!-- button to launch modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m">Search Remedy</button>
+                <!-- modal component -->
+                <div class="modal fade" id="m" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="diseases.jsp" method="get">
+                                    <div>
+                                        <label for="prob" class="form-label">Enter problem</label>
+                                        <input type="text" name="prob" id="prob" class="form-control" placeholder="Eg: Headache">
+                                    </div>
+                                    <div>
+                                    	 <button class="btn btn-secondary">Search Remedy</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+         </div>
+         <div class=" card card-body card-width">
+            <h2>Skin Care</h2>
+            <img class="w-100" src="pictures/7.webp" alt="">
+            <!-- button to launch modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m1">Search Remedy</button>
+            <!-- modal component -->
+            <div class="modal fade" id="m1" data-bs-backdrop="static">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="skincare.jsp" method="get">
+                                <div>
+                                    <label for="prob" class="form-label">Enter problem</label>
+                                    <input type="text" name="prob" id="prob" class="form-control" placeholder="Eg: Dry Skin">
+                                </div>
+                                <div>
+                                    	 <button type="submit" class="btn btn-secondary">Search Remedy</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+         </div>
+         <div class=" card card-body card-width">
+            <h2>Hair Care</h2>
+            <img class="w-100" src="pictures/8.jpg" alt="">
+            <!-- button to launch modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m2">Search Remedy</button>
+            <!-- modal component -->
+            <div class="modal fade" id="m2" data-bs-backdrop="static">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="haircare.jsp" method="get">
+                                <div>
+                                    <label for="prob" class="form-label">Enter problem</label>
+                                    <input type="text" name="prob" id="prob" class="form-control" placeholder="Eg: Hair Fall">
+                                </div>
+                                <div>
+                                    	 <button type="submit" class="btn btn-secondary">Search Remedy</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+         </div>
+         <div class="card card-body card-width">
+            <h2>Mental Health</h2>
+            <img class="w-100" src="pictures/9.jpeg" alt="">
+            <!-- button to launch modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m3">Search Remedy</button>
+            <!-- modal component -->
+            <div class="modal fade" id="m3" data-bs-backdrop="static">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="mentalhealth.jsp" method="get">
+                                <div>
+                                    <label for="prob" class="form-label">Enter problem</label>
+                                    <input type="text" name="prob" id="prob" class="form-control" placeholder="Eg: Stress">
+                                </div>
+                                <div>
+                                    	 <button class="btn btn-secondary">Search Remedy</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+         </div>
+         <div class="card card-body card-width">
+            <h2>Nutrition</h2>
+            <img class="w-100" src="pictures/10.jpg" alt="">
+            <!-- button to launch modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#m4">Search Remedy</button>
+            <!-- modal component -->
+            <div class="modal fade" id="m4" data-bs-backdrop="static">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="nutrition.jsp" method="get">
+                                <div>
+                                    <label for="prob" class="form-label">Enter problem</label>
+                                    <input type="text" name="prob" id="prob" class="form-control" placeholder="Eg: Iron Deficiency">
+                                </div>
+                                <div>
+                                    	 <button class="btn btn-secondary">Search Remedy</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+         </div>
+       </div>
+</main>
+<footer>
+    <div class="footerbottom">
+     <p>copyright &copy;2025;</p>
+    </div>
+</footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

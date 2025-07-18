@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natures cure corner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(12, 56, 12);
+    color: white;
+    height:70px;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    width:500px;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  header form .button-1{
+    margin-left:600px;
+    font-size: 1.3rem;
+    width:100px;
+    height:45px;
+    padding-bottom:5px;
+  }
+  footer {
+    background-color: #256c23;
+    color: white;
+    text-align: center;
+    height: 50px;
+  }
+  li{
+    list-style-type: none;
+  } 
+body{
+  background:rgb(6, 37, 6);
+  margin: 0;
+  font-size: 2vw; 
+  padding: 1vw;
+
+}
+.container {
+  max-width: 100%;
+  min-height:50px;
+}
+      
+
+.main-img{
+  background-image:url(pictures/4.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width:100%;
+  height:500px;
+  color:white; 
+}
+h1{
+  font-size:11vw;
+  border-radius: 15px;
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding:50px;
+  text-align: center;
+         
+}
+button{
+    background-color:whitesmoke;
+    width:150px;
+    height:30px;
+    margin:30px;
+    cursor: pointer;
+    
+}
+.container1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; 
+}
+.left-section {
+    flex:1.2;
+}
+.left-section h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+}
+.left-section p {
+    font-size: 1.08rem;
+    margin-bottom: 29px;
+    color: #191f10;
+    color: white;
+}
+.image-box {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 14px 0 rgba(0,0,0,0.07);
+}
+.image-box img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+}
+.right-section {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.card {
+    background:rgb(237, 229, 228);
+    border-radius: 14px;
+    padding: 28px 30px 28px 30px;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.04);
+    margin-bottom: 0;
+}
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.card h3{
+    color:#4D9A4D;
+    font-weight:bolder ;
+}
+.card .highlight {
+    color: #4D9A4D;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 6px;
+}
+.card p {
+    font-size: 1.05rem;
+    color: #444;
+    margin: 0;
+}
+.btn {
+    background: #3c9141;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.0rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration:none;
+    padding-bottom:5px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="review.html">User Review</a></li>
+      </ul>
+    </nav>
+    <form action="login.html">
+      <button type="submit" class="btn btn-success button-1">Login</button>
+    </form>
+  </header>
+
+    <div class="container">
+    <h1 class="main-img">
+      Nature's Cure Corner
+    </h1>
+    </div>
+    <main>
+    <div class="container1">
+      <div class="left-section">
+        <h1>Natural remedies</h1>
+        <p>We provide detailed info on using natural items  and their health benifits like plants, fruits, vegetables and spices wihtout side effects.</p>
+        <div class="image-box">
+          <img src="pictures/2.jpeg" alt="Holistic health items">
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="card">
+          <h2>Medicines</h2>
+          <h3>Herbs</h3>
+          <p>We offer guidance on using various herbs like turmeric, ginger, garlic etc for preventing and curing common ailments in a natural way.</p>
+        </div>
+        <div class="card">
+          <h2>Remedies</h2>        
+          <h3>Fruits</h3>
+          <p>We provide dietary and usage recommendations for health benefits from common fruits like apples, oranges, lemons etc.</p>
+        </div>
+        <div class="card">
+            <h2>Wellness tips</h2>
+            <h3>Vegetables</h3>
+            <p>Simple ways to incorporate healthy vegetables like spinach, sweet potato, broccoli etc into your meals for improving vitality.</p>
+        </div>
+        <a href="catalog.html" class="btn">Inquire</a>
+     </div>
+    </div>
+    </main>
+  <footer>
+     <p>copyright &copy;2025;</p>
+  </footer>
+</body>
+</html>
